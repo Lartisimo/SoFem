@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="imagesSoFem/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoFem</title>
+    <link rel="stylesheet" href="css/stylesPageProfil.css">
+</head>
+<body>
+    <nav class="nav collapsible collapsible--expanded">
+      <a class="nav__brand" target="_blank" href="https://sofem.e-congres.com/"><img src="imagesSoFem/logo.png" alt=""></a>
+      <p class="nav__title">Société d’Ophtalmologie Féminine Française</p>
+      <button class="nav__btn">Profil</button>
+      <svg class="icon icon--black nav__toggler">
+        <use xlink:href="imagesSoFem/sprite.svg#menu"></use>
+      </svg> 
+      <div class="list__bar">
+       <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Accueil</a></li>
+        <li class="nav__item"><a href="#">Programme</a></li>
+        <li class="nav__item"><a href="#">Présentation du CA</a></li>
+        <li class="nav__item"><a href="#">Comité d’honneur</a></li>
+        <li class="nav__item"><a href="#">Buts et objectifs</a></li>
+        <li class="nav__item nav__active"><a href="#">Profil</a></li>
+       </ul> 
+      </div>
+    </nav> 
+    <script src="js/navmain.js"></script>
+    <div class="profil__page">
+      <div style="color: var(--color-secondary);">Accueil</div>
+      <div class="arrow-right"></div>
+      <div style="color: var(--color-primary);">Profil</div>
+    </div>
+    <div class="profil__bar">
+      <span class="active__bar">
+          <img src="imagesSoFem/user.png" alt="user" class="icons"><span>Mon profil</span>
+      </span>
+      <span class="bar__width">
+          <img src="imagesSoFem/key.png" alt="key" class="icons"><span>Mot de passe</span>
+      </span>
+      <span class="bar__width">
+          <img src="imagesSoFem/ticket.png" alt="ticket" class="icons"><span>Mes accès</span>
+      </span>
+      <span class="bar__width" style="padding-right: 20px;">
+          <img src="imagesSoFem/cog.png" alt="cog" class="icons"><span>Préférences Cookies</span>
+      </span>
+    </div>
+    <form action="/sofemForm.html" class="grid__form grid--cols-12">
+      <div class="form__items">
+        <h2 class="infos cols-12">Identification</h2>
+        <hr class="line2 cols-12"><br>
+        <div class="cols-12">
+          <label class="label">
+              Votre adresse e-mail de connexion :</label><br>
+          <input type="email" class="input" name="email" placeholder="adressemail@gmail.com">
+          </div>  
+          <div class="cols-6">
+            <label class="label">Votre mot de passe <span style="color: red;">*</span></label><br>
+            <input class="input" type="password">
+          </div>
+          <div class="cols-6p">
+            <label class="label">Confirmez votre mot de passe <span style="color: red;">*</span></label>
+            <input class="input" type="password">
+          </div> 
+          <br>
+          <h2 class="infos cols-12">Informations personnelles</h2>
+          <hr class="line2 cols-12"><br>
+          <div class="cols-2">      
+            <label class="label">Civilité <span style="color: red;">*</span></label><br>
+              <select name="prenom" id="civilite">
+                <option value="select">select...</option>
+                  <option value="Mme">Mme</option>
+                  <option value="Mr">Mr</option>
+              </select>
+          </div>   
+          <div class="cols-5">
+            <label class="label">
+              Nom : <span style="color: red;">*</span></label><br>
+            <input type="text" class="input" name="name">
+          </div>   
+          <div class="cols-5p">
+            <label class="label">
+              Prenom : <span style="color: red;">*</span></label><br>
+            <input type="text" class="input" name="prenom">
+          </div><br>
+        <div class="cols-6">
+          <label class="label">Profession <span style="color: red;">*</span></label>
+          <select name="Profession" id="profession">
+            <option disabled selected value="Selectionnez votre profession">Selectionnez votre Profession</option>
+            <option value="/api/specialities/1">Orthptiste</option>
+            <option value="/">Chirurgien ophtalmologue</option>
+            <option value="/">Chef de service</option>
+            <option value="/">Interne</option>
+          </select>
+        </div>
+        <div class="cols-6p">
+          <label class="label">Specialite<span style="color: red;">*</span></label>
+          <select name="specialites" id="specialite">
+            <option  selected value="Selectionnez votre specialite">Selectionnez votre Spécialité</option>
+            <option value="/api/specialities/1">Orthptiste</option>
+            <option value="/">Chirurgien ophtalmologue</option>
+            <option value="/">Chef de service</option>
+            <option value="/">Interne</option>
+          </select>
+        </div>
+        <br>
+        <div class="cols-6">
+          <label for="pays" class="label">Pays<span style="color: red;">*</span></label>
+          <select name="paye" id="pays">
+            <option disabled selected value="Selectionnez votre pays">Selectionnez votre pays</option>
+            <option value="/api/specialities/1">Maroc</option>
+            <option value="/">USA</option>
+            <option value="/">Canada</option>
+            <option value="/">Brasil</option>
+          </select>
+        </div>
+        <div class="cols-6p">
+          <label for="ville" class="label">Ville<span style="color: red;">*</span></label>
+          <select name="ville" id="ville">
+            <option disabled selected value="Selectionnez votre ville">Selectionnez votre ville</option>
+            <option value="/api/specialities/1">Marrakech</option>
+            <option value="/">NYC</option>
+            <option value="/">Montereal</option>
+            <option value="/">Rio</option>
+          </select>
+        </div>
+        <div class="cols-12">
+          <p class="QYesNo">J’accepte de recevoir des courriels concernant ma spécialité.</p>
+        <div class="YesNo cols-1">
+          <input type="radio" value="yes" name="yes">
+          <label style="padding-right: 20px;">Yes</label>
+          <input type="radio" value="no" name="no">
+          <label>No</label>
+        </div>
+        </div>
+        </div>
+        <button class="edit__btn" type="submit">Éditer mon profil</button>
+
+      </form>
+      <hr class="spacer">
+      <h1 class="partenaires">Nos partenaires</h1>
+      <hr class="line2 cols-12"><br>
+      <div class="footer">
+        <a href="http://www.bayer.com/fr/fr/france" target="_blank">
+          <img class="sponsorLogo" src="imagesSoFem/Bayer.png" alt="Bayer">
+        </a>
+        <a href="https://www.bausch.fr/" target="_blank">
+          <img class="sponsorLogoT" src="imagesSoFem/B&L.jpeg" alt="B&L">
+        </a>
+        <a href="https://www.zeiss.fr/" target="_blank">
+          <img class="sponsorLogo" src="imagesSoFem/zeiss.png" alt="B&L">
+        </a>
+        <a href="https://www.abbvie.fr/" target="_blank">
+          <img class="sponsorLogoT" src="imagesSoFem/abbvie-1.png" alt="B&L">
+        </a>
+      </div>
+</body>
+</html>

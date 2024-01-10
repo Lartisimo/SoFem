@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="imagesSoFem/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page de connexion</title>
+    <link rel="stylesheet" href="css/styleConnexion.css" />
+  </head>
+  <body>
+    <nav class="nav collapsible collapsible--expanded">
+      <a class="nav__brand" target="_blank" href="https://sofem.e-congres.com/"
+        ><img src="imagesSoFem/logo.png" alt=""
+      /></a>
+      <p class="nav__title">Société d’Ophtalmologie Féminine Française</p>
+      <div class="buttons__nav">
+        <button class="btn__connexion">Connexion</button>
+        <button class="btn__creation">Créer un compte</button>
+      </div>
+      <svg class="icon icon--black nav__toggler">
+        <use xlink:href="imagesSoFem/sprite.svg#menu"></use>
+      </svg>
+      <div class="list__bar">
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Accueil</a></li>
+          <li class="nav__item"><a href="#">Programme</a></li>
+          <li class="nav__item"><a href="#">Replays</a></li>
+          <li class="nav__item"><a href="#">Présentation du CA</a></li>
+          <li class="nav__item"><a href="#">Comité d’honneur</a></li>
+          <li class="nav__item"><a href="#">Buts et objectifs</a></li>
+          <li class="nav__item nav__active">
+            <a href="#">Connexion / Créer un compte</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <script src="js/navmain.js"></script>
+    <div class="profil__page">
+      <div style="color: var(--color-secondary)">Accueil</div>
+      <div class="arrow-right"></div>
+      <div style="color: var(--color-primary)">connexion</div>
+    </div>
+    <br />
+    <div class="LoginForms">
+      <div class="grid grid--cols-2">
+        <div class="FormLog" data-aos="zoom-in-right">
+          <section class="Login">
+            <p>J'ai déjà un compte</p>
+            <h1>SE CONNECTER</h1>
+            <form class="LoginForm" novalidate>
+              <div class="formItem">
+                <div>
+                  <label class="label">Email</label><br />
+                  <input
+                    type="email"
+                    class="input"
+                    required
+                    placeholder="adressemail@gmail.com"
+                  />
+                </div>
+              </div>
+              <div class="formItem">
+                <div>
+                  <label class="label">Mot de passe</label><br />
+                  <input type="password" class="input" />
+                </div>
+              </div>
+              <div class="formCheck">
+                <div>
+                  <input type="checkbox" id="rememberMe" name="rememberMe" class="checkbox"/>
+                  <label for="rememberMe" class="label">Se souvenir de moi</label
+                  >
+                </div>
+              </div>
+              <button class="buttonLogin">Se connecter</button>
+              <a href="#" class="forgotPassword">Mot de passe oublié&nbsp;?</a>
+            </form>
+          </section>
+        </div>
+        <div class="FormSign-in" data-aos="zoom-in-left">
+          <section class="Sign-in">
+            <p>J'ai déjà un compte</p>
+            <h1 class="createAcc">CREER UN COMPTE</h1>
+            <form class="LoginForm" novalidate>
+              <div class="formItem">
+                <div>
+                  <label class="label"
+                    >Entrez votre e-mail ici
+                    <span style="color: red">*</span></label
+                  ><br />
+                  <input
+                    type="email"
+                    class="input"
+                    required
+                    placeholder="adressemail@gmail.com"
+                  />
+                </div>
+              </div>
+              <div class="formItem">
+                <div>
+                  <label class="label"
+                    >Entrez à nouveau votre e-mail ici
+                    <span style="color: red">*</span></label
+                  ><br />
+                  <input type="email" class="input" />
+                </div>
+              </div>
+              <div class="formCheck">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="rememberMe"
+                    name="rememberMe"
+                    class="checkbox"
+                  />
+                  <label for="rememberMe" class="label"
+                    >Je certifie être un professionnel de santé</label
+                  >
+                </div>
+              </div>
+              <button class="buttonSign-in">Créer un compte</button>
+            </form>
+          </section>
+        </div>
+        <br />
+      </div>
+    </div>
+    <hr class="spacer" />
+    <h1 class="partenaires">Nos partenaires</h1>
+    <hr class="line2 cols-12" />
+    <br />
+    <div class="footer">
+      <a href="http://www.bayer.com/fr/fr/france" target="_blank">
+        <img class="sponsorLogo" src="imagesSoFem/Bayer.png" alt="Bayer" />
+      </a>
+      <a href="https://www.bausch.fr/" target="_blank">
+        <img class="sponsorLogoT" src="imagesSoFem/B&L.jpeg" alt="B&L" />
+      </a>
+      <a href="https://www.zeiss.fr/" target="_blank">
+        <img class="sponsorLogo" src="imagesSoFem/zeiss.png" alt="B&L" />
+      </a>
+      <a href="https://www.abbvie.fr/" target="_blank">
+        <img class="sponsorLogoT" src="imagesSoFem/abbvie-1.png" alt="B&L" />
+      </a>
+    </div>
+  </body>
+</html>
