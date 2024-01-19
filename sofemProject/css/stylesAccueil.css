@@ -217,7 +217,7 @@ a {
 
 /* ======= 1er Congres "background" ======== */
 .background__main {
-    background: url("/imagesSoFem/angle.png") right bottom no-repeat rgb(231, 215, 234);
+    background: url("/sofemProject/imagesSoFem/angle.png") right bottom no-repeat rgb(231, 215, 234);
     height: 500px;
     width: auto;
     position: relative;
@@ -419,6 +419,13 @@ a {
 
 }
 
+@media screen and (min-width:1700px) {
+    .programTitle {
+        margin: 0 80px;
+    }
+
+}
+
 .programSubTitle {
     color: var(--color-secondary);
     font-size: 18px;
@@ -612,6 +619,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
+
 }
 
 .shopGrid {
@@ -676,17 +684,40 @@ a {
     color: #FFFFFF;
     cursor: pointer;
     display: flex;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     padding: 10px 20px;
     height: 50px;
     justify-content: center;
     margin-top: 20px;
     width: 200px;
+    margin-bottom: 30px;
 }
 
 .btn__BeMember:hover {
     background-color: #742c86;
+}
+
+.btn__Login {
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    border: none;
+    color: var(--color-primary);
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 20px;
+    height: 50px;
+    justify-content: center;
+    margin-top: 20px;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.btn__Login:hover {
+    background-color: #a292a4;
 }
 
 /* ==== Replays ==== */
@@ -711,7 +742,7 @@ a {
         margin: 0 auto;
     }
 
-    .programTitle {
+    .replay {
         margin: 0 80px;
     }
 
