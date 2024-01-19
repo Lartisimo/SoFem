@@ -398,7 +398,7 @@ a {
 .programHeading {
     display: flex;
     justify-content: space-between;
-    padding: 0 80px;
+    padding: 0 20px;
 }
 
 .sect {
@@ -415,7 +415,7 @@ a {
 .programTitle {
     color: var(--color-primary);
     font-size: 45px;
-    margin-bottom: 30px;
+    margin: 0 0;
 
 }
 
@@ -690,8 +690,11 @@ a {
 }
 
 /* ==== Replays ==== */
-.programTitle {
+.replay {
     margin: 0 20px;
+    color: var(--color-primary);
+    font-size: 45px;
+    margin-bottom: 30px;
 }
 
 .cardGrid {
